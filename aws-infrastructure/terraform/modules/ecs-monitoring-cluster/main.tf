@@ -4,7 +4,7 @@ resource "aws_iam_role" "ecs_monitoring_task_role" {
 }
 
 resource "aws_iam_policy" "ecs_monitoring_task_role_policy" {
-  name = "backend-monitoring-ecs-task-role-${var.region}"
+  name = "backend-monitoring-ecs-task-role-policy-${var.region}"
   policy = file("../../../policies/ecs-monitoring-task-role-policy.json")
 }
 
